@@ -28,7 +28,19 @@ func main() {
 
      msg := strings.Join(args, " ")
 
-     _, err = w.WriteString(msg)
+     b := []byte("Write " + msg)
+
+     _, err = w.Write(b)
+
+     if err != nil {
+   	panic(err)
+     }
+	
+     // WriteString is provided as a convenience if you don't
+     // feel like []byte("-ing") all the things per the default
+     // io.Writer interface spec
+
+     _, err = w.WriteString("WriteString " + msg)
 
      if err != nil {
      	panic(err)
