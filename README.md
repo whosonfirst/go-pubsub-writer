@@ -1,4 +1,4 @@
-# go-pubsub-writer
+# go-writer-pubsub
 
 A Go package for sending Redis PubSub messages using a standard io.Writer interface
 
