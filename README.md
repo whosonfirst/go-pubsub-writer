@@ -9,7 +9,7 @@ package main
 
 import (
        "flag"
-       "github.com/whosonfirst/go-pubsub-writer"
+       "github.com/whosonfirst/go-writer-pubsub"
        "strings"
        )
 
